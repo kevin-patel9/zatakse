@@ -1,11 +1,11 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 
 function Profile() {
     return (
-        <View>
+        <SafeAreaView style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
             <Text>Profile</Text>
-        </View>
+        </SafeAreaView>
     );
 }
 

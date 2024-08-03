@@ -13,6 +13,7 @@ import SearchIconSvg from "../../assets/svg/SearchIconSvg";
 import BackButtonSvg from "../../assets/svg/BackButtonSvg";
 import { debounce } from "lodash";
 import CrossButton from "../../assets/svg/CrossButton";
+import { commonPoint } from "../../common/Apicall";
 
 const SearchProducts = ({ navigation }) => {
   const [searchList, setSearchList] = useState([]);
@@ -28,7 +29,7 @@ const SearchProducts = ({ navigation }) => {
         setError("");
         try {
           const res = await fetch(
-            `https://dummyjson.com/products/search?q=${searchTerm}&limit=9`
+            `${commonPoint}/products/search?q=${searchTerm}&limit=9`
           );
           const data = await res.json();
           setSearchList(data?.products || []);

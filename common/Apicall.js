@@ -1,0 +1,1 @@
+export const commonPoint = "https://dummyjson.com";

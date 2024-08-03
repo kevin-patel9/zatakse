@@ -1,11 +1,11 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 
 function Overview() {
     return (
-        <View>
+        <SafeAreaView style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
             <Text>Overview</Text>
-        </View>
+        </SafeAreaView>
     );
 }
 

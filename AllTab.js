@@ -54,7 +54,7 @@ const AllTab = () => {
           <View style={{ height: 22, width: 22 }}>
             <Image
               source={require("./assets/bottomTabImages/currency_rupee.png")}
-              style={{ flex: 1, width: null, height: null }}
+              style={{ flex: 1, width: null, height: null, resizeMode: "contain" }}
             />
           </View>
         </View>
@@ -92,7 +92,7 @@ const AllTab = () => {
 
   return (
     <Tab.Navigator
-      initialRouteName={"OrderScreen"}
+      initialRouteName={"Products"}
       screenOptions={{
         tabBarStyle: {
           borderTopLeftRadius: 6,
@@ -103,27 +103,24 @@ const AllTab = () => {
       tabBarOptions={{ showLabel: false }}
     >
       <Tab.Screen
-        name="OrdersScreen"
+        name="Orders"
         component={Orders}
         options={{
           tabBarIcon: OrderIcon,
-          headerShown: false,
         }}
       />
       <Tab.Screen
-        name="ProductsScreen"
+        name="Products"
         component={Products}
         options={{
           tabBarIcon: ProductsIcon,
-          headerShown: false,
         }}
       />
       <Tab.Screen
-        name="OverviewScreen"
+        name="Overview"
         component={Overview}
         options={{
           tabBarIcon: OverviewIcon,
-          headerShown: false,
         }}
       />
       <Tab.Screen
@@ -131,7 +128,6 @@ const AllTab = () => {
         component={Profile}
         options={{
           tabBarIcon: ProfileIcon,
-          headerShown: false,
         }}
       />
     </Tab.Navigator>
