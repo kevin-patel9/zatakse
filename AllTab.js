@@ -3,17 +3,17 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import Profile from "./Screens/Profile";
 import Overview from "./Screens/Overview";
-import Products from "./Screens/Products";
 import Orders from "./Screens/Orders";
+import Products from "./Screens/Products/Products";
 
 const AllTab = () => {
   const OrderIcon = (tabInfo) => {
     return (
       <View style={styles.iconContainer}>
         <View style={{ zIndex: 2 }}>
-          <View style={{ height: 24, width: 24 }}>
+          <View style={{ height: 22, width: 22 }}>
             <Image
-              // source={require("./assets/MainIcons/ticket2.png")}
+              source={require("./assets/bottomTabImages/orders.png")}
               style={{ flex: 1, width: null, height: null }}
             />
           </View>
@@ -21,7 +21,7 @@ const AllTab = () => {
         <View
           style={[
             styles.iconBackground,
-            { backgroundColor: tabInfo.focused ? "grey" : "none" },
+            { backgroundColor: tabInfo.focused ? "lightgrey" : "none" },
           ]}
         />
       </View>
@@ -31,9 +31,9 @@ const AllTab = () => {
     return (
       <View style={styles.iconContainer}>
         <View style={{ zIndex: 2 }}>
-          <View style={{ height: 24, width: 24 }}>
+          <View style={{ height: 22, width: 22 }}>
             <Image
-              // source={require("./assets/MainIcons/ticket2.png")}
+              source={require("./assets/bottomTabImages/products.png")}
               style={{ flex: 1, width: null, height: null }}
             />
           </View>
@@ -41,7 +41,7 @@ const AllTab = () => {
         <View
           style={[
             styles.iconBackground,
-            { backgroundColor: tabInfo.focused ? "grey" : "none" },
+            { backgroundColor: tabInfo.focused ? "lightgrey" : "none" },
           ]}
         />
       </View>
@@ -51,9 +51,9 @@ const AllTab = () => {
     return (
       <View style={styles.iconContainer}>
         <View style={{ zIndex: 2 }}>
-          <View style={{ height: 24, width: 24 }}>
+          <View style={{ height: 22, width: 22 }}>
             <Image
-              // source={require("./assets/MainIcons/ticket2.png")}
+              source={require("./assets/bottomTabImages/currency_rupee.png")}
               style={{ flex: 1, width: null, height: null }}
             />
           </View>
@@ -61,7 +61,7 @@ const AllTab = () => {
         <View
           style={[
             styles.iconBackground,
-            { backgroundColor: tabInfo.focused ? "grey" : "none" },
+            { backgroundColor: tabInfo.focused ? "lightgrey" : "none" },
           ]}
         />
       </View>
@@ -71,9 +71,9 @@ const AllTab = () => {
     return (
       <View style={styles.iconContainer}>
         <View style={{ zIndex: 2 }}>
-          <View style={{ height: 24, width: 24 }}>
+          <View style={{ height: 22, width: 22 }}>
             <Image
-              // source={require("./assets/MainIcons/ticket2.png")}
+              source={require("./assets/bottomTabImages/person.png")}
               style={{ flex: 1, width: null, height: null }}
             />
           </View>
@@ -81,7 +81,7 @@ const AllTab = () => {
         <View
           style={[
             styles.iconBackground,
-            { backgroundColor: tabInfo.focused ? "grey" : "none" },
+            { backgroundColor: tabInfo.focused ? "lightgrey" : "none" },
           ]}
         />
       </View>

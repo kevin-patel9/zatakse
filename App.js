@@ -6,6 +6,8 @@ import AllTab from "./AllTab";
 import { useEffect, useState } from "react";
 import NetInfo from "@react-native-community/netinfo";
 import ConnectionLost from "./Screens/connection/connectionLost";
+import Subcategory from "./Screens/Products/Subcategory";
+import SearchProducts from "./Screens/Products/SearchProducts";
 
 export default function App() {
   const [connection, setConnection] = useState(true);
@@ -31,6 +33,16 @@ export default function App() {
         <Stack.Screen
           name="allTabs"
           component={AllTab}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="sub-categories"
+          component={Subcategory}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="searchPage"
+          component={SearchProducts}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
